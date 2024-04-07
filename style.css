@@ -24,18 +24,23 @@ li {
     list-style-type: none;
 }
 
+h1 {
+    margin: 0;
+}
+
 .ctnr {
     /* border: 2px solid yellow; */
-    width: 80%;
+    width: 85%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.nav {
+/* Will implement until later */
+/* .nav {
     display: none;
-}
+} */
 
-/* ORDER matters! Putting the below before .nav results in toggle not working */
+/* Note to self: ORDER matters! Putting the below before .nav results in toggle not working */
 .visible {
     display: block;
 }
@@ -65,3 +70,33 @@ li {
     color: white;
 }
 
+.hero {
+    background-image: url("img/pkmn_md_banner.png");
+    background-size: cover;
+    background-position: center center;
+    padding: 4rem 0;
+    /* text-align: center; */
+}
+
+.hero__title {
+    /* border: 2px solid black; */
+    font-size: 2.5rem;
+    color: rgba(255, 234, 3, 0.7);
+    text-shadow: 2px 1px 7px #964B00, 2px 1px 7px #964B00;
+}
+
+.hero__text {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.hero__btn {
+    font-family: "Livvic", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #e4a101;
+    color: #964B00;;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 100px;
+}

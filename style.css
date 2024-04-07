@@ -1,0 +1,67 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Livvic", sans-serif;
+}
+
+header {
+    background-color: black;
+    padding: 1rem 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.ctnr {
+    /* border: 2px solid yellow; */
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: none;
+}
+
+/* ORDER matters! Putting the below before .nav results in toggle not working */
+.visible {
+    display: block;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.nav__items {
+    /* border: 1px solid orange; */
+    margin: 0;
+}
+
+.nav__item {
+    margin-top: 0.5rem;
+}
+
+.nav__toggle {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 2rem;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+}
+

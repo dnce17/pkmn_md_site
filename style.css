@@ -163,3 +163,16 @@ h1 {
 .games__info-version--blue {
     background-color: blue;
 }
+
+.games__released-selection {
+    text-align: center;
+    position: relative;
+}
+
+.games__released-name {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+

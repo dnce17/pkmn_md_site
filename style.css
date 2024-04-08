@@ -44,6 +44,17 @@ h1 {
     margin: 0 auto;
 }
 
+.btn {
+    font-family: "Livvic", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #e4a101;
+    color: #964B00;;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 100px;
+}
+
 /* Will implement until later */
 /* .nav {
     display: none;
@@ -107,17 +118,6 @@ h1 {
     font-size: 1.2rem;
 }
 
-.hero__btn {
-    font-family: "Livvic", sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
-    background-color: #e4a101;
-    color: #964B00;;
-    padding: 0.5em 1em;
-    border: none;
-    border-radius: 100px;
-}
-
 .games {
     /* border: 1px solid green; */
     background-image: url("img/bg_pattern.png");
@@ -164,9 +164,14 @@ h1 {
     background-color: blue;
 }
 
+.games__released {
+    text-align: center;
+}
+
 .games__released-selection {
     text-align: center;
     position: relative;
+
 }
 
 .games__released-name {
@@ -176,3 +181,10 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
+.games__released-btn {
+    color: white;
+}
+
+/* .games__released-selection:not(:first-child) {
+    display: none;
+} */

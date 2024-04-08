@@ -16,6 +16,11 @@ header {
     padding: 1rem 0;
 }
 
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
 ul {
     padding: 0;
 }
@@ -26,6 +31,10 @@ li {
 
 h1 {
     margin: 0;
+}
+
+.font-bold {
+    font-weight: bold;
 }
 
 .ctnr {
@@ -99,4 +108,50 @@ h1 {
     padding: 0.5em 1em;
     border: none;
     border-radius: 100px;
+}
+
+.games {
+    /* border: 1px solid green; */
+    background-image: url("img/bg_pattern.png");
+    padding: 3rem 0;   
+}
+
+.games__title {
+    text-align: center;
+}
+
+.games__info {
+    margin-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    background-color: white;
+    box-shadow: 0px 0px 35px -10px #964B00;
+}
+
+.games__info-text {
+    margin: 0;
+}
+
+.games__info-item {
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.games__info-brand {
+    background-color: #92765e;
+    width: fit-content;
+    padding: 0.5rem;
+}
+
+.games__info-version {
+    width: fit-content;
+    color: white;
+    padding: 0.5rem;
+}
+
+.games__info-version--red {
+    background-color: red;
+}
+
+.games__info-version--blue {
+    background-color: blue;
 }

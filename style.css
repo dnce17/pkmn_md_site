@@ -56,13 +56,8 @@ h1 {
 }
 
 /* Will implement until later */
-/* .nav {
+.nav {
     display: none;
-} */
-
-/* Note to self: ORDER matters! Putting the below before .nav results in toggle not working */
-.visible {
-    display: block;
 }
 
 .navbar {
@@ -171,7 +166,7 @@ h1 {
 .games__released-selection {
     text-align: center;
     position: relative;
-
+    margin-top: 1rem;
 }
 
 .games__released-name {
@@ -182,9 +177,18 @@ h1 {
 }
 
 .games__released-btn {
+    margin-top: 1rem;
     color: white;
 }
 
-/* .games__released-selection:not(:first-child) {
+
+
+
+.not-first-child {
     display: none;
-} */
+}
+
+/* Note to self: ORDER matters! Putting the below before .nav results in toggle not working */
+.visible {
+    display: block;
+}

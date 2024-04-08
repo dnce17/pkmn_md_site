@@ -83,12 +83,20 @@ h1 {
     background-image: url("img/pkmn_md_banner.png");
     background-size: cover;
     background-position: center center;
-    padding: 4rem 0;
+    padding-bottom: 4rem;
     /* text-align: center; */
+}
+
+.pmd-logo {
+    display: block;
+    text-align: center;
+    padding-top: 1rem;
+    /* border: 1px solid yellow; */
 }
 
 .hero__title {
     /* border: 2px solid black; */
+    padding-top: 4rem;
     font-size: 2.5rem;
     color: rgba(255, 234, 3, 0.7);
     text-shadow: 2px 1px 7px #964B00, 2px 1px 7px #964B00;

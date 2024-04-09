@@ -128,10 +128,12 @@ h1 {
 }
 
 .games__info {
-    margin-top: 1.5rem;
     padding-bottom: 0.5rem;
     background-color: white;
     box-shadow: 0px 0px 35px -10px #964B00;
+    width: 100%;
+    max-width: 460px;
+    margin: 1.5rem auto 0 auto;
 }
 
 .games__info-text {

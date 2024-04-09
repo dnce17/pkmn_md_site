@@ -86,7 +86,7 @@ h1 {
 }
 
 .hero {
-    background-image: url("img/pkmn_md_banner.png");
+    background-image: url("img/pkmn-md-banner.png");
     background-size: cover;
     background-position: center center;
     padding-bottom: 4rem;
@@ -115,7 +115,7 @@ h1 {
 
 .games {
     /* border: 1px solid green; */
-    background-image: url("img/bg_pattern_rigidtan.png");
+    background-image: url("img/bg-patterns/bg-pattern-rigidtan.png");
     padding: 3rem 0;   
 }
 
@@ -184,7 +184,7 @@ h1 {
 .pmd-info {
     /* background-color: rgb(232, 207, 122); */
     padding: 2rem 0;
-    background-image: url("img/bg_pattern_lightgreen.png");
+    background-image: url("img/bg-patterns/bg-pattern-lightgreen.png");
 }
 
 .pmd-info__item + .pmd-info__item, .pmd-info_text {

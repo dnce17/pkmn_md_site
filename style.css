@@ -56,15 +56,15 @@ h1 {
 }
 
 /* Will implement until later */
-.nav {
+/* .nav {
     display: none;
-}
+} */
 
 .navbar {
     text-align: center;
 }
 
-.nav__items {
+.nav__list, .nav__items {
     /* border: 1px solid orange; */
     margin: 0;
 }

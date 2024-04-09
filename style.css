@@ -187,7 +187,7 @@ h1 {
     background-image: url("img/bg-patterns/bg-pattern-lightgreen.png");
 }
 
-.pmd-info__item + .pmd-info__item, .pmd-info_text {
+.pmd-info__item + .pmd-info__item, .pmd-info__text {
     margin-top: 1rem;
 }
 

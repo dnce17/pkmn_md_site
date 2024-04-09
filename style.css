@@ -56,9 +56,9 @@ h1 {
 }
 
 /* Will implement until later */
-/* .nav {
+.nav {
     display: none;
-} */
+}
 
 .navbar {
     text-align: center;
@@ -74,10 +74,14 @@ h1 {
 }
 
 .nav__toggle {
+    margin-top: 0.4rem;
     width: 2rem;
     height: 2rem;
     position: absolute;
     left: 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
 }
 
 .nav__link {

@@ -115,7 +115,7 @@ h1 {
 
 .games {
     /* border: 1px solid green; */
-    background-image: url("img/bg_pattern.png");
+    background-image: url("img/bg_pattern_rigidtan.png");
     padding: 3rem 0;   
 }
 
@@ -179,6 +179,16 @@ h1 {
 .games__released-btn {
     margin-top: 1rem;
     color: white;
+}
+
+.pmd-info {
+    /* background-color: rgb(232, 207, 122); */
+    padding: 2rem 0;
+    background-image: url("img/bg_pattern_lightgreen.png");
+}
+
+.pmd-info__item + .pmd-info__item, .pmd-info_text {
+    margin-top: 1rem;
 }
 
 

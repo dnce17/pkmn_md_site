@@ -241,7 +241,7 @@ h1 {
     display: block;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 800px) {
     .hero__title {
         max-width: 500px;
     }
@@ -281,5 +281,21 @@ h1 {
 
     .games__released-selection:nth-child(2) {
         display: block;
+    }
+
+    .pmd-info__item {
+        /* Adding this allow flex-items to be same width */
+        width: 100%;
+        border: 1px solid blue;
+    }
+
+    .pmd-info__item + .pmd-info__item {
+        margin-top: 0;
+        margin-left: 2rem;
+    }
+
+    .flex {
+        display: flex;
+        border: 1px solid green;
     }
 }

@@ -273,4 +273,13 @@ h1 {
     .games__info-paragraph {
         max-width: 400px;
     }
+
+    .games__released-ctnr {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .games__released-selection:nth-child(2) {
+        display: block;
+    }
 }

@@ -33,15 +33,16 @@ h1 {
     margin: 0;
 }
 
-.font-bold {
-    font-weight: bold;
-}
-
 .ctnr {
     /* border: 2px solid yellow; */
     width: 85%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.category {
+    font-weight: bold;
+    color: black;
 }
 
 .btn {
@@ -128,7 +129,7 @@ h1 {
 }
 
 .games__info {
-    padding-bottom: 0.5rem;
+    padding-bottom: 1.5rem;
     background-color: white;
     box-shadow: 0px 0px 35px -10px #964B00;
     width: 100%;
@@ -142,13 +143,19 @@ h1 {
 
 .games__info-item {
     margin-top: 0.5rem;
-    padding-left: 0.5rem;
+    padding-left: 0.7rem;
+    color: #6C6C6C;
+}
+
+.games__info-paragraph {
+    width: 80%;
 }
 
 .games__info-brand {
     background-color: #92765e;
     width: fit-content;
     padding: 0.5rem;
+    color: white;
 }
 
 .games__info-version {
@@ -232,4 +239,38 @@ h1 {
 /* Note to self: ORDER matters! Putting the below before .nav results in toggle not working */
 .visible {
     display: block;
+}
+
+@media (min-width: 750px) {
+    .hero__title {
+        max-width: 500px;
+    }
+
+    .games__info {
+        display: flex;
+        max-width: 1000px;
+        padding: 0;
+    }
+
+    .games__info-img {
+        width: 45%;
+    }
+
+    .games__info-text {
+        border: 2px solid orange;
+        width: 55%;
+        padding-bottom: 1rem;
+    }
+
+    .games__info-item {
+        padding-left: 3rem;
+    }
+    
+    .games__info-item--spacing {
+        padding-left: 0;
+    }
+
+    .games__info-paragraph {
+        max-width: 400px;
+    }
 }

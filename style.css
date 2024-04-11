@@ -364,4 +364,13 @@ h1 {
         max-width: 750px;
         padding-top: 8rem;
     }
+
+    .games__released-ctnr {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .games__released-selection:nth-child(3) {
+        display: block;
+    }
 }

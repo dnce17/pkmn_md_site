@@ -214,7 +214,7 @@ h1 {
     color: black;
 }
 
-.footer__img + .footer__img {
+.footer__img {
     display: block;
     padding-top: 1.5rem;
     margin: 0 auto;
@@ -231,6 +231,36 @@ h1 {
 .copyright-text {
     margin-top: 2rem;
     font-size: 0.75rem;
+}
+
+.footer__social-medias {
+    display: flex;
+}
+
+.footer__social-medias {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid green; */
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: rgb(172, 122, 62);
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+.icon + .icon  {
+    margin-left: 0.5rem;
+}
+
+.fa-brands {
+    font-size: 1.3em;
+    color: rgb(236, 215, 160);
 }
 
 .not-first-child {

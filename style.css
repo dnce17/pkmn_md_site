@@ -401,4 +401,10 @@ h1 {
     .games__released-selection:nth-child(3) {
         display: block;
     }
+
+    .nav__item:hover .nav__link {
+        color: gray;
+        border-top: 2px solid gray;
+        border-bottom: 2px solid gray;
+    }
 }

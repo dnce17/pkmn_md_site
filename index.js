@@ -18,7 +18,7 @@ function toggleGamesSelection() {
     
     btn.addEventListener("click", () => {
         for (let i = 1; i < selections.length; i++) {
-            selections[i].classList.toggle("visible");
+            selections[i].classList.toggle("visible-inline-block");
         }
         
         if (btn.textContent.toLowerCase() == "show more") {

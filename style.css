@@ -355,6 +355,31 @@ h1 {
 }
 
 @media (min-width: 1150px) {
+    .nav__toggle {
+        display: none;
+    }
+
+    .navbar {
+        text-align: left;
+        display: flex;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+
+        /* will be as 100% as it can, which allow flex-end to work */
+        width: 100%;
+    }
+
+    .nav__list {
+        display: flex;
+    }
+
+    .nav__item + .nav__item {
+        margin-left: 2rem;
+    }
+
     .hero {
         padding-bottom: 8rem;
     }

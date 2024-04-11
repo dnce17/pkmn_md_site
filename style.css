@@ -353,3 +353,15 @@ h1 {
         display: flex;
     }
 }
+
+@media (min-width: 1150px) {
+    .hero {
+        padding-bottom: 8rem;
+    }
+
+    .hero__title {
+        font-size: 3.5rem;
+        max-width: 750px;
+        padding-top: 8rem;
+    }
+}

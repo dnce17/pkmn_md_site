@@ -261,6 +261,8 @@ h1 {
     display: block;
 }
 
+
+
 @media (min-width: 800px) {
     .hero {
         padding-bottom: 6rem;
@@ -354,13 +356,14 @@ h1 {
     }
 }
 
+
+
 @media (min-width: 1150px) {
     .nav__toggle {
         display: none;
     }
 
     .navbar {
-        text-align: left;
         display: flex;
     }
 

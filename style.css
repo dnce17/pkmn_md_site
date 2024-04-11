@@ -211,7 +211,8 @@ h1 {
 }
 
 .footer__link {
-    color: black;
+    color: #49361f;
+    text-decoration: none;
 }
 
 .footer__img {
@@ -235,10 +236,6 @@ h1 {
 
 .footer__social-medias {
     display: flex;
-}
-
-.footer__social-medias {
-    display: flex;
     justify-content: center;
     /* border: 1px solid green; */
 }
@@ -254,7 +251,7 @@ h1 {
     text-decoration: none;
 }
 
-.icon + .icon  {
+.icon + .icon {
     margin-left: 0.5rem;
 }
 
@@ -323,6 +320,29 @@ h1 {
     .pmd-info__item + .pmd-info__item {
         margin-top: 0;
         margin-left: 2rem;
+    }
+
+    .footer__logos {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__social-medias {
+        padding-top: 1.5rem;
+    }
+
+    .footer__list-ctnr {
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid green; */
+    }
+
+    .footer__list {
+        text-align: left;
+    }
+
+    .footer__list--right {
+        margin-left: 3rem;
     }
 
     .flex {

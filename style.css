@@ -173,6 +173,7 @@ h1 {
     text-align: center;
     position: relative;
     margin-top: 1rem;
+    display: inline-block;
 }
 
 .games__released-name {
@@ -256,9 +257,22 @@ h1 {
     display: none;
 }
 
-/* Note to self: ORDER matters! Putting the below before .nav results in toggle not working */
 .visible {
     display: block;
+}
+
+/* Note to self: ORDER matters! Putting the below before .nav results in toggle not working */
+.visible-inline-block {
+    display: inline-block;
+}
+
+.games__released-selection:hover {
+    outline-color: rgb(172, 122, 62);
+    outline-style: dashed;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
 }
 
 
@@ -311,12 +325,19 @@ h1 {
     }
 
     .games__released-ctnr {
-        display: grid;
+        display: inline-grid;
         grid-template-columns: auto auto;
+        grid-gap: 1rem;
     }
 
     .games__released-selection:nth-child(2) {
         display: block;
+    }
+
+    .games__released-btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 1rem;
     }
 
     .pmd-info__item {
@@ -394,7 +415,6 @@ h1 {
     }
 
     .games__released-ctnr {
-        display: grid;
         grid-template-columns: auto auto auto;
     }
 

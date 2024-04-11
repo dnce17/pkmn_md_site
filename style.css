@@ -283,7 +283,7 @@ h1 {
 
     .games__info {
         display: flex;
-        max-width: 1000px;
+        max-width: 850px;
         padding: 0;
     }
 

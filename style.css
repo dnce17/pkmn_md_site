@@ -262,8 +262,23 @@ h1 {
 }
 
 @media (min-width: 800px) {
+    .hero {
+        padding-bottom: 6rem;
+    }
+
     .hero__title {
-        max-width: 500px;
+        /* border: 3px solid black; */
+        max-width: 650px;
+        font-size: 3rem;
+        padding-top: 6rem;
+    }
+    
+    .hero__text {
+        font-size: 1.5rem;
+    }
+
+    .games__title {
+        font-size: 2rem;
     }
 
     .games__info {

@@ -1,5 +1,25 @@
+let jsonData;
+
+function main() {
+    getJsonData();
+    toggleNav();
+    toggleGamesSelection();
+    addSelectionEvts();
+}
+
 function changeText (variable, desiredText) {
     variable.textContent = desiredText;
+}
+
+function getJsonData() {
+    fetch('games.json')
+        .then(response => response.json())
+        .then(data => {
+            jsonData = data;
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
 }
 
 function toggleNav() {
@@ -10,7 +30,6 @@ function toggleNav() {
         nav.classList.toggle("visible");
     })
 }
-toggleNav();
 
 function toggleGamesSelection() {
     const btn = document.querySelector(".games__released-btn");
@@ -29,4 +48,27 @@ function toggleGamesSelection() {
         }
     })
 }
-toggleGamesSelection();
+
+function addSelectionEvts() {
+    const selections = document.querySelectorAll(".games__released-selection");
+
+    for (let i = 0; i < selections.length; i++) {
+        selections[i].addEventListener("click", () => {
+            selectionImgSrc = selections[i].firstElementChild.src.match("img.*")[0].trim();
+            changeGameImg(selectionImgSrc);
+
+        });
+    }
+}
+
+function changeGameImg(selectionImgSrc) {
+    for (const game of jsonData) {
+        if (selectionImgSrc == game.imgSelection) {
+            let gameImg = document.querySelector(".games__info-img");
+            gameImg.src = game.imgSrc;
+            gameImg.alt = game.title;
+        }
+    }
+}
+
+main();

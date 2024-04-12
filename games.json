@@ -1,0 +1,22 @@
+[
+    {
+        "title": "PMD Rescue Team Red and Blue",
+        "imgSrc": "img/game-main-display/pmd-red-blue.png",
+        "imgSelection": "img/game-selections/pmd-red-blue-selection.png",
+        "versions": ["Red Rescue Team", "Blue Rescue Team"],
+        "colors": ["red", "blue"],
+        "releaseYrs": "2005, 2006, 2016 (for Wii U VC)",
+        "consoles": "GBA (Red Rescue Team), DS (Blue Rescue Team), Wii U VC",
+        "text": "In a world devastated by many recent natural disasters, form a rescue team and find a solution to the catastrophes."
+    },
+    {
+        "title": "PMD Explorers of Time and Darkness",
+        "imgSrc": "img/game-main-display/pmd-time-darkness.png",
+        "imgSelection": "img/game-selections/pmd-time-darkness-selection.png",
+        "versions": ["Explorers of Time", "Explorers of Darkness"],
+        "colors": ["aqua", "red"],
+        "releaseYrs": "2007, 2008",
+        "consoles": "DS",
+        "text": "Form an expedition team and uncover the secrets behind distortions and time and space itself!"
+    }
+]

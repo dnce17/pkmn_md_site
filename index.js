@@ -78,13 +78,15 @@ function changeGameImg(game) {
 }
 
 function changeGameVersion(versions, colors) {
-    // Must consider games with only 1 version + special case: PSMD
-
-    // For 2 and 1 version games
-
     // Target games__info-item via games__info-text (parent) b/c games__info-item not unique
     let gameInfo = document.querySelector(".games__info-text").firstElementChild;
-    removeChildren(gameInfo, "games__info-version");
+    removeChildren(gameInfo);
+
+    // PSMD is a special case since it's title is not PMD, but issue is resolved with createVersion() later
+    if (versions[0].toLowerCase() != "pokemon super mystery dungeon") {
+        let p = createBrand("Pokemon Mystery Dungeon", "games__info-brand", "p");
+        gameInfo.appendChild(p);
+    }
 
     // Create and add version(s) of the game selected
     for (let i = 0; i < versions.length; i++) {
@@ -94,23 +96,21 @@ function changeGameVersion(versions, colors) {
         // Insert into parent
         gameInfo.appendChild(p);
     }
-
-    // PSMD
-    // querySelector the games__info-item[0]
-    // Delete ALL children
-    // create just 1 p with .games__info-version class
-    // maybe have its own special color
-
 }
 
-function removeChildren(parent, className) {
-    // Delete the children that includes ..-version in class name
-    for (let i = parent.children.length - 1; i > 0; i--) {
-        let child = parent.children[i];
-        if (child.classList.contains(className)) {
-            child.remove();
-        }
+function removeChildren(parent) {
+    while (parent.lastElementChild) {
+        parent.removeChild(parent.lastElementChild);
     }
+}
+
+// Will turn createBrand and createVersion into a general use function later
+function createBrand(brandName, className, tag) {
+    let elem = document.createElement(tag);
+    elem.classList.add(className);
+    elem.textContent = brandName;
+
+    return elem;
 }
 
 function createVersion(version, color, className, tag) {

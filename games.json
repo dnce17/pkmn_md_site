@@ -14,9 +14,39 @@
         "imgSrc": "img/game-main-display/pmd-time-darkness.png",
         "imgSelection": "img/game-selections/pmd-time-darkness-selection.png",
         "versions": ["Explorers of Time", "Explorers of Darkness"],
-        "colors": ["aqua", "red"],
+        "colors": ["time", "darkness"],
         "releaseYrs": "2007, 2008",
         "consoles": "DS",
         "text": "Form an expedition team and uncover the secrets behind distortions and time and space itself!"
+    },
+    {
+        "title": "PMD Explorers of Sky",
+        "imgSrc": "img/game-main-display/pmd-sky.png",
+        "imgSelection": "img/game-selections/pmd-sky-selection.png",
+        "versions": ["Explorers of Sky"],
+        "colors": ["sky"],
+        "releaseYrs": "2009",
+        "consoles": "DS",
+        "text": "The definitive version of PMD Explorers of Time and Darkness. Take to the skies and experience new stories and dungeons while unraveling the mysteries behind the distortion of time and space."
+    },
+    {
+        "title": "PMD Gates to Infinity",
+        "imgSrc": "img/game-main-display/pmd-gti.png",
+        "imgSelection": "img/game-selections/pmd-gti-selection.png",
+        "versions": ["Gates to Infinity"],
+        "colors": ["gti"],
+        "releaseYrs": "2012, 2013",
+        "consoles": "3DS",
+        "text": "(PLACEHOLDER: I did not play this game yet, so I don't want to spoil myself by researching this game XD. Please forgive me.)"
+    },
+    {
+        "title": "Pokemon Super Mystery Dungeon",
+        "imgSrc": "img/game-main-display/psmd.png",
+        "imgSelection": "img/game-selections/psmd-selection.png",
+        "versions": ["Pokemon Super Mystery Dungeon"],
+        "colors": ["super"],
+        "releaseYrs": "2015, 2016",
+        "consoles": "3DS",
+        "text": "Make haste as a disaster is beginning to envelop the world! Strategize to beat tough enemies and connect with all 720 species of Pokémon!"
     }
 ]

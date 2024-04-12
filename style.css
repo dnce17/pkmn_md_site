@@ -324,6 +324,9 @@ h1 {
     .games__info-text {
         width: 55%;
         padding-bottom: 1rem;
+        display: grid;
+        grid-template-rows: 50%;
+
     }
 
     .games__info-item {

@@ -169,6 +169,11 @@ h1 {
     background-color: rgb(0, 200, 246);
 }
 
+.games__info-version--super {
+    background-image: url("img/bg-patterns/psmd-bg.png");
+    background-position: center center;
+}
+
 .games__info-version--sky {
     background-color: rgb(53, 211, 53);
 }

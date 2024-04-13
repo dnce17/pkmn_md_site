@@ -178,6 +178,10 @@ h1 {
     background-color: rgb(53, 211, 53);
 }
 
+.games__info-version--dx {
+    background-image: url("img/bg-patterns/dx-bg.png");
+    background-position: center center;
+}
 
 .games__released {
     text-align: center;
@@ -325,7 +329,7 @@ h1 {
         width: 55%;
         padding-bottom: 1rem;
         display: grid;
-        grid-template-rows: 50%;
+        grid-template-rows: 45% 45% auto;
 
     }
 
@@ -339,6 +343,10 @@ h1 {
 
     .games__info-paragraph {
         max-width: 400px;
+    }
+
+    .games__info-btn {
+        margin-left: 3rem;
     }
 
     .games__released-ctnr {

@@ -48,5 +48,15 @@
         "releaseYrs": "2015, 2016",
         "consoles": "3DS",
         "text": "Make haste as a disaster is beginning to envelop the world! Strategize to beat tough enemies and connect with all 720 species of Pokémon!"
+    },
+    {
+        "title": "Pokemon Mystery Dungeon Rescue Team DX",
+        "imgSrc": "img/game-main-display/pmd-dx.png",
+        "imgSelection": "img/game-selections/pmd-dx-selection.png",
+        "versions": ["Rescue Team DX"],
+        "colors": ["dx"],
+        "releaseYrs": "2020",
+        "consoles": "Switch",
+        "text": "This enhanced reimagining of PMD Red and Blue Rescue Team gets a stunning new look on Nintendo Switch. Experience the very first PMD games in all its modernized glory with new features and a new art style."
     }
 ]

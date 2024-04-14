@@ -323,14 +323,12 @@ h1 {
 
     .games__info-img {
         width: 45%;
+        min-height: 418px;
     }
 
     .games__info-text {
         width: 55%;
         padding-bottom: 1rem;
-        display: grid;
-        grid-template-rows: 45% 45% auto;
-
     }
 
     .games__info-item {
@@ -343,10 +341,6 @@ h1 {
 
     .games__info-paragraph {
         max-width: 400px;
-    }
-
-    .games__info-btn {
-        margin-left: 3rem;
     }
 
     .games__released-ctnr {

@@ -7,7 +7,7 @@ function main() {
     addSelectionEvts();
 }
 
-function changeText (variable, desiredText) {
+function changeText(variable, desiredText) {
     variable.textContent = desiredText;
 }
 
@@ -54,7 +54,7 @@ function addSelectionEvts() {
 
     for (let i = 0; i < selections.length; i++) {
         selections[i].addEventListener("click", () => {
-            // Will use the img src as comparison to grab correct info from JSON data
+            // Uses img src as comparison to grab correct info from JSON data
             selectionImgSrc = selections[i].firstElementChild.src.match("img.*")[0].trim();
             changeGameInfo(selectionImgSrc);
         });
@@ -84,14 +84,15 @@ function changeGameVersion(versions, colors) {
 
     // PSMD is a special case since it's title is not PMD, but issue is resolved with createVersion() later
     if (versions[0].toLowerCase() != "pokemon super mystery dungeon") {
-        let p = createBrand("Pokemon Mystery Dungeon", "games__info-brand", "p");
+        // Create brand
+        let p = createItem("Pokemon Mystery Dungeon", "games__info-brand", "p");
         gameInfo.appendChild(p);
     }
 
     // Create and add version(s) of the game selected
     for (let i = 0; i < versions.length; i++) {
-        // Add the version, color, and text for each new element made
-        let p = createVersion(versions[i], colors[i], "games__info-version", "p");
+        // Create version - add the version, color, and text for each new element made
+        let p = createItem(versions[i], "games__info-version", "p", colors[i]);
 
         // Insert into parent
         gameInfo.appendChild(p);
@@ -104,19 +105,18 @@ function removeChildren(parent) {
     }
 }
 
-// Will turn createBrand and createVersion into a general use function later
-function createBrand(brandName, className, tag) {
+function createItem(name, className, tag, color="none") {
     let elem = document.createElement(tag);
-    elem.classList.add(className);
-    elem.textContent = brandName;
+    if (color == "none") {
+        // Create brand
+        elem.classList.add(className);
+    }
+    else {
+        // Create version
+        elem.classList.add(className, `${className}--${color}`);
+    }
 
-    return elem;
-}
-
-function createVersion(version, color, className, tag) {
-    let elem = document.createElement(tag);
-    elem.classList.add(className, `${className}--${color}`);
-    elem.textContent = version;
+    elem.textContent = name;
 
     return elem;
 }

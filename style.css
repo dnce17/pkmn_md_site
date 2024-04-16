@@ -53,6 +53,10 @@ h1 {
     padding: 0.5em 1em;
     border: none;
     border-radius: 100px;
+    text-decoration: none;
+
+    /* Prevents anchor tag from ignoring margin-top */
+    display: inline-block;
 }
 
 .navbar {
@@ -96,7 +100,8 @@ h1 {
 
 .pmd-logo {
     display: block;
-    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
     padding-top: 1rem;
 }
 
@@ -205,6 +210,7 @@ h1 {
 .games__released-btn {
     margin-top: 1rem;
     color: white;
+    cursor: pointer;
 }
 
 .pmd-info {
@@ -284,9 +290,20 @@ h1 {
     display: inline-block;
 }
 
+.nav__link:hover {
+    color: gray;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+
+.btn:hover {
+    background-color: #ecba45;
+}
+
 .games__released-selection:hover {
     outline-color: rgb(172, 122, 62);
     outline-style: dashed;
+    cursor: pointer;
 }
 
 .footer__link:hover {
@@ -442,11 +459,5 @@ h1 {
 
     .games__released-selection:nth-child(3) {
         display: block;
-    }
-
-    .nav__item:hover .nav__link {
-        color: gray;
-        border-top: 2px solid gray;
-        border-bottom: 2px solid gray;
     }
 }
